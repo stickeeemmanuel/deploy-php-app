@@ -1,7 +1,7 @@
 ---
 - name: Initial server setup
   ansible.builtin.import_playbook: 
-    ../initial-server-setup/initial-server-setup.yml
+    ../ansible-lemp-stack/initial-server-setup.yml
 - name: Configure php app 
   ansible.builtin.import_playbook: 
     ../php-lemp/php_app_config.yml
